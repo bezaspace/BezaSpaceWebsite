@@ -1,10 +1,21 @@
 import React from 'react';
 import { Megaphone, Target, Palette, BarChart3, Globe, Smartphone } from 'lucide-react';
+import instagramIcon from '../assets/instagram.png';
+import linkedinIcon from '../assets/linkedin.png';
+import twitterIcon from '../assets/twitter.png';
+import youtubeIcon from '../assets/youtube.png';
 
 const Services = () => {
   const services = [
     {
-      icon: <Megaphone className="h-8 w-8" />,
+      icon: (
+        <div className="flex space-x-2">
+          <img src={instagramIcon} alt="Instagram" className="h-8 w-8" />
+          <img src={linkedinIcon} alt="LinkedIn" className="h-8 w-8" />
+          <img src={twitterIcon} alt="Twitter" className="h-8 w-8" />
+          <img src={youtubeIcon} alt="YouTube" className="h-8 w-8" />
+        </div>
+      ),
       title: "Digital Marketing",
       description: "Comprehensive digital marketing strategies that drive engagement and convert leads into loyal customers.",
       color: "yellow"
